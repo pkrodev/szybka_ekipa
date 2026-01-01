@@ -1,0 +1,22 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="#2563eb"/>
+
+  <!-- Truck icon -->
+  <g transform="translate(35, 55)">
+    <!-- Truck body -->
+    <rect x="0" y="10" width="65" height="35" rx="5" fill="white"/>
+
+    <!-- Truck cabin -->
+    <rect x="65" y="0" width="35" height="45" rx="5" fill="white"/>
+
+    <!-- Windows -->
+    <rect x="70" y="5" width="25" height="18" rx="3" fill="#2563eb"/>
+
+    <!-- Wheels -->
+    <circle cx="22" cy="55" r="9" fill="#1e40af"/>
+    <circle cx="22" cy="55" r="4" fill="white"/>
+    <circle cx="78" cy="55" r="9" fill="#1e40af"/>
+    <circle cx="78" cy="55" r="4" fill="white"/>
+  </g>
+</svg>
