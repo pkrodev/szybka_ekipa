@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     // Example: Send email (uncomment and configure when ready)
     /*
     await sendEmail({
-      to: "szybkaekipa@gmail.com",
+      to: "szybkaekipa24@gmail.com",
       subject: `Nowe zapytanie - ${serviceLabels[validatedData.service]}`,
       html: `
         <h2>Nowe zapytanie z formularza kontaktowego</h2>

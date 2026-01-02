@@ -8,7 +8,7 @@ export const siteConfig = {
     phoneRaw: "733435319",
     phone2: "519 096 947",
     phone2Raw: "519096947",
-    email: "szybkaekipa@gmail.com",
+    email: "szybkaekipa24@gmail.com",
     hours: "7 dni w tygodniu, 6:00-22:00",
   },
 

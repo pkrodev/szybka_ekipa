@@ -124,7 +124,7 @@ Liczba załączonych zdjęć: ${files.length}
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER, // Send to yourself
-      subject: `Nowe zapytanie o wycenę - ${name}`,
+      subject: "Wycena",
       text: emailText,
       html: emailHtml,
       attachments,

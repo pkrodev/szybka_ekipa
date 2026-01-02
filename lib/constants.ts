@@ -31,8 +31,8 @@ export const CONTACT = {
   PHONE_RAW: "733435319",
   PHONE_2: "519 096 947",
   PHONE_2_RAW: "519096947",
-  EMAIL: "szybkaekipa@gmail.com",
+  EMAIL: "szybkaekipa24@gmail.com",
   PHONE_HREF: "tel:+48733435319",
   PHONE_2_HREF: "tel:+48519096947",
-  EMAIL_HREF: "mailto:szybkaekipa@gmail.com",
+  EMAIL_HREF: "mailto:szybkaekipa24@gmail.com",
 } as const;
