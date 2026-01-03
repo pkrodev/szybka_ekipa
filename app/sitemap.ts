@@ -12,6 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/uslugi`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/uslugi/oproznianie-mieszkan`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -24,16 +30,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/cennik`,
+      url: `${baseUrl}/uslugi/wywoz-mebli`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/galeria`,
+      url: `${baseUrl}/uslugi/wywoz-po-remoncie`,
       lastModified: new Date(),
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/uslugi/rozbiorki`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/uslugi/po-spadkach`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/kontakt`,

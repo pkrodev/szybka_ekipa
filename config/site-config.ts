@@ -35,9 +35,9 @@ export const siteConfig = {
   },
 
   seo: {
-    defaultTitle: "Opróżnianie Mieszkań Lublin | Wywóz Śmieci | Szybka Ekipa 733 435 333",
+    defaultTitle: "Opróżnianie Mieszkań Lublin | Wywóz Śmieci | Szybka Ekipa 733 435 319",
     titleTemplate: "%s | Szybka Ekipa Lublin",
-    description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lublinie i okolicach. Szybko, tanio, 7 dni w tygodniu. Zadzwoń: 733 435 333",
+    description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lublinie i okolicach. Szybko, tanio, 7 dni w tygodniu. Zadzwoń: 733 435 319",
     keywords: [
       "opróżnianie mieszkań Lublin",
       "wywóz śmieci Lublin",
