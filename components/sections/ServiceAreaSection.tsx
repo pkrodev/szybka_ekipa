@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import { serviceAreas } from "@/data/service-areas";
+import { getLocationByName } from "@/data/locations";
 
 export default function ServiceAreaSection() {
   // Sort by distance
@@ -47,22 +48,39 @@ export default function ServiceAreaSection() {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              {nearbyAreas.map((area) => (
-                <div
-                  key={area.name}
-                  className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-colors"
-                >
-                  <div className="w-2 h-2 bg-accent rounded-full"></div>
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">
-                      {area.name}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {area.distance} km
-                    </p>
+              {nearbyAreas.map((area) => {
+                const locationPage = getLocationByName(area.name);
+                const AreaContent = (
+                  <>
+                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <div>
+                      <p className="font-semibold text-foreground text-sm">
+                        {area.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {area.distance} km
+                      </p>
+                    </div>
+                  </>
+                );
+
+                return locationPage ? (
+                  <Link
+                    key={area.name}
+                    href={`/miejscowosci/${locationPage.slug}`}
+                    className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-colors"
+                  >
+                    {AreaContent}
+                  </Link>
+                ) : (
+                  <div
+                    key={area.name}
+                    className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-primary hover:bg-primary/5 transition-colors"
+                  >
+                    {AreaContent}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -83,22 +101,39 @@ export default function ServiceAreaSection() {
             </div>
 
             <div className="grid grid-cols-2 gap-3">
-              {furtherAreas.map((area) => (
-                <div
-                  key={area.name}
-                  className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-secondary hover:bg-secondary/5 transition-colors"
-                >
-                  <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  <div>
-                    <p className="font-semibold text-foreground text-sm">
-                      {area.name}
-                    </p>
-                    <p className="text-xs text-muted-foreground">
-                      {area.distance} km
-                    </p>
+              {furtherAreas.map((area) => {
+                const locationPage = getLocationByName(area.name);
+                const AreaContent = (
+                  <>
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                    <div>
+                      <p className="font-semibold text-foreground text-sm">
+                        {area.name}
+                      </p>
+                      <p className="text-xs text-muted-foreground">
+                        {area.distance} km
+                      </p>
+                    </div>
+                  </>
+                );
+
+                return locationPage ? (
+                  <Link
+                    key={area.name}
+                    href={`/miejscowosci/${locationPage.slug}`}
+                    className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-secondary hover:bg-secondary/5 transition-colors"
+                  >
+                    {AreaContent}
+                  </Link>
+                ) : (
+                  <div
+                    key={area.name}
+                    className="flex items-center gap-2 p-3 bg-white rounded-lg border border-border hover:border-secondary hover:bg-secondary/5 transition-colors"
+                  >
+                    {AreaContent}
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

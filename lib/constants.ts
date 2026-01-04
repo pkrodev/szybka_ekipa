@@ -15,8 +15,6 @@ export const SERVICE_AREAS = [
   { name: "Lubartów", distance: 30 },
   { name: "Świdnik", distance: 10 },
   { name: "Bychawa", distance: 25 },
-  { name: "Nałęczów", distance: 25 },
-  { name: "Puławy", distance: 50 },
 ] as const;
 
 // Opening hours

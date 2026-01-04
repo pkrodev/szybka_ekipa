@@ -22,44 +22,16 @@ export const serviceAreas: ServiceArea[] = [
     distance: 10,
   },
   {
+    name: "Niemce",
+    distance: 15,
+  },
+  {
     name: "Bychawa",
     distance: 25,
   },
   {
-    name: "Nałęczów",
-    distance: 25,
-  },
-  {
-    name: "Puławy",
-    distance: 50,
-  },
-  {
-    name: "Chełm",
-    distance: 65,
-  },
-  {
-    name: "Biała Podlaska",
-    distance: 95,
-  },
-  {
-    name: "Zamość",
-    distance: 90,
-  },
-  {
-    name: "Końskowola",
-    distance: 35,
-  },
-  {
     name: "Łęczna",
     distance: 20,
-  },
-  {
-    name: "Międzyrzec Podlaski",
-    distance: 75,
-  },
-  {
-    name: "Parczew",
-    distance: 55,
   },
 ];
 
