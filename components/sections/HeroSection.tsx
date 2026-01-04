@@ -96,7 +96,7 @@ export default function HeroSection() {
               <Button asChild variant="outline" size="lg">
                 <Link href="/kontakt">
                   <Mail className="w-5 h-5 mr-2" />
-                  Wyślij wiadomość
+                  Skontaktuj się z nami
                 </Link>
               </Button>
             </div>
