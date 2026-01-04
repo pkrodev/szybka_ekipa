@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="pl" className="w-full">
       <head>
-        <meta name="facebook-domain-verification" content="h5mvdptwfsa2ycgvwbcnxkoag2a0d9" />
+        <meta name="facebook-domain-verification" content="znzk55znb4eyo5yb64xnbkgewkcbnb" />
         <LocalBusinessSchema />
         <script
           dangerouslySetInnerHTML={{
