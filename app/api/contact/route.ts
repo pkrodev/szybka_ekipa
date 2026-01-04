@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contactFormSchema, serviceLabels } from "@/lib/validation";
 import { z } from "zod";
+import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
   try {
@@ -10,13 +11,7 @@ export async function POST(request: NextRequest) {
     // Validate data
     const validatedData = contactFormSchema.parse(body);
 
-    // In production, you would:
-    // 1. Send email using a service like SendGrid, Resend, or Nodemailer
-    // 2. Save to database
-    // 3. Send to CRM
-    // 4. Send SMS notification
-
-    // For now, we'll just log and return success
+    // Log submission
     console.log("Contact form submission:", {
       name: validatedData.name,
       email: validatedData.email,
@@ -26,27 +21,79 @@ export async function POST(request: NextRequest) {
       timestamp: new Date().toISOString(),
     });
 
-    // Simulate email sending delay
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    // Example: Send email (uncomment and configure when ready)
-    /*
-    await sendEmail({
-      to: "szybkaekipa24@gmail.com",
-      subject: `Nowe zapytanie - ${serviceLabels[validatedData.service]}`,
-      html: `
-        <h2>Nowe zapytanie z formularza kontaktowego</h2>
-        <p><strong>Imię i nazwisko:</strong> ${validatedData.name}</p>
-        <p><strong>Email:</strong> ${validatedData.email}</p>
-        <p><strong>Telefon:</strong> ${validatedData.phone}</p>
-        <p><strong>Usługa:</strong> ${serviceLabels[validatedData.service]}</p>
-        <p><strong>Wiadomość:</strong></p>
-        <p>${validatedData.message}</p>
-        <hr>
-        <p><small>Wysłano: ${new Date().toLocaleString('pl-PL')}</small></p>
-      `,
+    // Create transporter
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD,
+      },
     });
-    */
+
+    // Email content
+    const emailHtml = `
+      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+        <h2 style="color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px;">
+          Nowe zapytanie z formularza kontaktowego
+        </h2>
+
+        <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h3 style="margin-top: 0; color: #1f2937;">Dane klienta:</h3>
+          <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <td style="padding: 8px 0; color: #6b7280; font-weight: bold;">Imię i nazwisko:</td>
+              <td style="padding: 8px 0;">${validatedData.name}</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; color: #6b7280; font-weight: bold;">Email:</td>
+              <td style="padding: 8px 0;"><a href="mailto:${validatedData.email}" style="color: #2563eb; text-decoration: none;">${validatedData.email}</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; color: #6b7280; font-weight: bold;">Telefon:</td>
+              <td style="padding: 8px 0;"><a href="tel:${validatedData.phone}" style="color: #2563eb; text-decoration: none;">${validatedData.phone}</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 8px 0; color: #6b7280; font-weight: bold;">Usługa:</td>
+              <td style="padding: 8px 0;">${serviceLabels[validatedData.service]}</td>
+            </tr>
+          </table>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; border: 1px solid #e5e7eb; border-radius: 8px; margin: 20px 0;">
+          <h3 style="margin-top: 0; color: #1f2937;">Wiadomość:</h3>
+          <p style="color: #374151; line-height: 1.6; white-space: pre-wrap;">${validatedData.message}</p>
+        </div>
+
+        <p style="color: #6b7280; font-size: 12px; margin-top: 30px; border-top: 1px solid #e5e7eb; padding-top: 15px;">
+          Wysłano: ${new Date().toLocaleString('pl-PL')}
+        </p>
+      </div>
+    `;
+
+    const emailText = `
+NOWE ZAPYTANIE Z FORMULARZA KONTAKTOWEGO
+
+Dane klienta:
+- Imię i nazwisko: ${validatedData.name}
+- Email: ${validatedData.email}
+- Telefon: ${validatedData.phone}
+- Usługa: ${serviceLabels[validatedData.service]}
+
+Wiadomość:
+${validatedData.message}
+
+Wysłano: ${new Date().toLocaleString('pl-PL')}
+    `;
+
+    // Send email
+    await transporter.sendMail({
+      from: process.env.GMAIL_USER,
+      to: process.env.GMAIL_USER,
+      subject: `Zapytanie - ${serviceLabels[validatedData.service]}`,
+      text: emailText,
+      html: emailHtml,
+      replyTo: validatedData.email,
+    });
 
     return NextResponse.json(
       {
