@@ -125,7 +125,7 @@ export default function OproznianieMieszkanPage() {
                 { step: "1", title: "Kontakt i wstępna wycena", desc: "Opiszesz nam zakres prac, my oszacujemy koszt" },
                 { step: "2", title: "Oględziny (opcjonalnie)", desc: "Możemy przyjechać i zobaczyć mieszkanie" },
                 { step: "3", title: "Ustalenie terminu", desc: "Często tego samego lub następnego dnia" },
-                { step: "4", title: "Realizacja", desc: "Wynosimy wszystko, segregujemy, wywożymy" },
+                { step: "4", title: "Realizacja", desc: "Wynosimy wszystko, segregujemy, wywozimy" },
                 { step: "5", title: "Rozliczenie", desc: "Płatność po wykonanej usłudze" },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
@@ -141,17 +141,11 @@ export default function OproznianieMieszkanPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             <div className="bg-white p-6 rounded-xl border">
               <h4 className="font-bold mb-3">📍 Obszar działania</h4>
               <p className="text-sm text-muted-foreground">
                 Lublin i okolice: Radzyń Podlaski, Kock, Lubartów oraz wszystkie gminy w promieniu 50 km
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-xl border">
-              <h4 className="font-bold mb-3">💎 Przedmioty wartościowe</h4>
-              <p className="text-sm text-muted-foreground">
-                Wykupujemy antyki, meble i elektronikę w dobrym stanie - odliczamy od kosztów usługi!
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border">

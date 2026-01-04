@@ -17,7 +17,7 @@ export default function WywozMebliPage() {
     <>
       <ServiceSchema
         serviceName="Wywóz Mebli Lublin"
-        description="Profesjonalny wywóz starych mebli w Lublinie. Szafy, kanapy, łóżka - wywożymy wszystko z każdego piętra."
+        description="Profesjonalny wywóz starych mebli w Lublinie. Szafy, kanapy, łóżka - wywozimy wszystko z każdego piętra."
         priceRange="$$"
         priceDescription="Od 350 zł - wyniesienie, transport i utylizacja"
       />
@@ -53,14 +53,14 @@ export default function WywozMebliPage() {
             <h2 className="text-3xl font-bold mb-6">Wywóz mebli - szybko i profesjonalnie</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Potrzebujesz pozbyć się starych mebli? <strong className="text-foreground">Szybka Ekipa</strong>{" "}
-              zajmie się tym za Ciebie! Wywożymy wszystkie rodzaje mebli - od
+              zajmie się tym za Ciebie! Wywozimy wszystkie rodzaje mebli - od
               pojedynczych krzeseł, po całe zestawy wypoczynkowe. Wynosimy meble z
               każdego piętra (nawet bez windy), załadowujemy na samochód i
               legalnie utylizujemy.
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-6 text-center">Jakie meble wywożymy?</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Jakie meble wywozimy?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
             {[
               "Szafy i meblościanki",

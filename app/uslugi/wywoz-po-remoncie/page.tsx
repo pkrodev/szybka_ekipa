@@ -54,13 +54,13 @@ export default function WywozPoRemoncePage() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Po remoncie zawsze zostaje mnóstwo śmieci i odpadów budowlanych.{" "}
               <strong className="text-foreground">Szybka Ekipa</strong> zajmie się ich wywozem szybko i
-              profesjonalnie! Wywożymy gruz, worki ze śmieciami, stare podłogi,
+              profesjonalnie! Wywozimy gruz, worki ze śmieciami, stare podłogi,
               płytki, tynki oraz wszelkie inne materiały budowlane. Zapewniamy
               legalną utylizację na składowisku.
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-6 text-center">Co wywożymy?</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Co wywozimy?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
             {[
               "Gruz ceglany i betonowy",

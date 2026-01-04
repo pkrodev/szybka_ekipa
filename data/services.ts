@@ -103,7 +103,7 @@ export const services: Service[] = [
     title: "Rozbiórki",
     slug: "rozbiorki",
     shortDescription: "Piece kaflowe, meblościanki, altany, komórki lokatorskie.",
-    description: "Zajmujemy się rozbiórkąi demontażem różnego rodzaju konstrukcji w Lublinie i okolicach. Rozbieramy piece kaflowe, meblościanki, altany, komórki lokatorskie, szopy oraz inne konstrukcje. Po rozbiórce wywożymy gruz i pozostałości.",
+    description: "Zajmujemy się rozbiórkąi demontażem różnego rodzaju konstrukcji w Lublinie i okolicach. Rozbieramy piece kaflowe, meblościanki, altany, komórki lokatorskie, szopy oraz inne konstrukcje. Po rozbiórce wywozimy gruz i pozostałości.",
     icon: "Hammer",
     features: [
       "Rozbiórka pieców kaflowych",

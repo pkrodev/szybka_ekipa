@@ -59,7 +59,7 @@ export default function WywozSmieciPage() {
             </p>
           </div>
 
-          <h3 className="text-2xl font-bold mb-6 text-center">Jakie śmieci wywożymy?</h3>
+          <h3 className="text-2xl font-bold mb-6 text-center">Jakie śmieci wywozimy?</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
             {[
               "Meble i wyposażenie",
@@ -90,7 +90,7 @@ export default function WywozSmieciPage() {
             <div className="bg-gradient-to-br from-secondary/5 to-white p-6 rounded-xl border border-secondary/20">
               <h4 className="font-bold text-lg mb-2">Wywóz mebli i AGD</h4>
               <p className="text-muted-foreground">
-                Stara kanapa, lodówka, pralka czy telewizor? Wynosimy, zabezpieczamy i wywożymy do odpowiedniego punktu utylizacji
+                Stara kanapa, lodówka, pralka czy telewizor? Wynosimy, zabezpieczamy i wywozimy do odpowiedniego punktu utylizacji
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary/5 to-white p-6 rounded-xl border border-primary/20">

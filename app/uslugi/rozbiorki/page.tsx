@@ -56,7 +56,7 @@ export default function RozbiorkiPage() {
               konstrukcji w Lublinie i okolicach. Dysponujemy odpowiednim sprzętem
               i doświadczeniem, aby bezpiecznie rozebrać piece kaflowe,
               meblościanki, altany, komórki lokatorskie i inne budynki
-              gospodarcze. Po rozbiórce wywożymy gruz i zostawiamy po sobie
+              gospodarcze. Po rozbiórce wywozimy gruz i zostawiamy po sobie
               porządek.
             </p>
           </div>
@@ -130,7 +130,7 @@ export default function RozbiorkiPage() {
                 { step: "3", title: "Wycena", desc: "Przedstawiamy ofertę z dokładną ceną" },
                 { step: "4", title: "Ustalenie terminu", desc: "Planujemy prace w dogodnym dla Ciebie czasie" },
                 { step: "5", title: "Rozbiórka", desc: "Rozbieramy konstrukcję bezpiecznie i sprawnie" },
-                { step: "6", title: "Wywóz i posprzątanie", desc: "Wywożymy gruz i zostawiamy po sobie porządek" },
+                { step: "6", title: "Wywóz i posprzątanie", desc: "Wywozimy gruz i zostawiamy po sobie porządek" },
               ].map((item, i) => (
                 <div key={i} className="flex gap-4 items-start">
                   <div className="flex-shrink-0 w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center font-bold">
