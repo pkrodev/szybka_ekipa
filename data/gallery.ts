@@ -56,15 +56,6 @@ export const galleryImages: GalleryImage[] = [
     alt: "Wywóz śmieci wielkogabarytowych Lublin",
   },
   {
-    id: "7",
-    title: "Opróżnianie mieszkania po zmarłym - Puławy",
-    beforeImage: "/images/gallery/before-7.jpg",
-    afterImage: "/images/gallery/after-7.jpg",
-    location: "Puławy",
-    category: "clearing",
-    alt: "Opróżnianie mieszkania po zmarłym Puławy",
-  },
-  {
     id: "8",
     title: "Transport mebli z piętra bez windy - Lublin Wieniawa",
     beforeImage: "/images/gallery/before-8.jpg",

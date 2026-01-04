@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { siteConfig } from "@/config/site-config";
+import { getAllLocationSlugs } from "@/data/locations";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
@@ -61,5 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return routes;
+  // Add location pages
+  const locationSlugs = getAllLocationSlugs();
+  const locationRoutes = locationSlugs.map((slug) => ({
+    url: `${baseUrl}/miejscowosci/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...routes, ...locationRoutes];
 }

@@ -147,7 +147,7 @@ export default function WywozSmieciPage() {
             <div className="bg-white p-6 rounded-xl border">
               <h4 className="font-bold mb-3">📍 Obszar działania</h4>
               <p className="text-sm text-muted-foreground">
-                Lublin oraz okolice w promieniu 50 km: Radzyń Podlaski, Kock, Lubartów, Bychawa, Świdnik
+                Lublin oraz okolice w promieniu 50 km: Radzyń Podlaski, Kock, Lubartów, Świdnik
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl border">

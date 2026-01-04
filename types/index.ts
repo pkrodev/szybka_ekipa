@@ -46,3 +46,34 @@ export interface Metadata {
   keywords?: string[];
   ogImage?: string;
 }
+
+export interface LocationPage {
+  slug: string;
+  name: string;
+  distance: number;
+  fullName: string;
+  region: string;
+  description: string;
+  showTravelCost?: boolean; // Whether to show travel cost section
+  seo: {
+    title: string;
+    description: string;
+    keywords: string[];
+  };
+  content: {
+    hero: {
+      title: string;
+      subtitle: string;
+    };
+    whyUs: {
+      title: string;
+      points: string[];
+    };
+    serviceHighlights: string[];
+    localInfo?: {
+      neighborhoods?: string[];
+      landmarks?: string[];
+    };
+  };
+  faqs: FAQ[];
+}

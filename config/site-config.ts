@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Szybka Ekipa",
   description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lublinie. Szybko, tanio, 7 dni w tygodniu.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://szybkaekipa.pl",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://szybka-ekipa.pl",
 
   contact: {
     phone: "733 435 319",
