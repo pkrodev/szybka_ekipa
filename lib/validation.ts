@@ -16,7 +16,7 @@ export const contactFormSchema = z.object({
     .max(15, "Numer telefonu może mieć maksymalnie 15 cyfr")
     .regex(/^[0-9\s\-+()]+$/, "Podaj poprawny numer telefonu"),
   service: z.enum(
-    ["clearing", "waste-disposal", "other"],
+    ["clearing", "waste-disposal", "furniture-removal", "post-renovation", "demolition", "estate-clearing", "other"],
     { message: "Wybierz rodzaj usługi" }
   ),
   message: z
@@ -36,6 +36,10 @@ export type ContactFormData = z.infer<typeof contactFormSchema>;
 export const serviceLabels: Record<ContactFormData["service"], string> = {
   clearing: "Opróżnianie mieszkań",
   "waste-disposal": "Wywóz śmieci",
+  "furniture-removal": "Wywóz mebli",
+  "post-renovation": "Wywóz po remoncie",
+  demolition: "Rozbiórki",
+  "estate-clearing": "Opróżnianie po spadkach",
   other: "Inne",
 };
 
