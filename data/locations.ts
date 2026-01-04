@@ -162,7 +162,7 @@ export const locations: LocationPage[] = [
       },
       {
         question: "Czy wywozicie też rzeczy z gospodarstw rolnych?",
-        answer: "Tak, mamy duże doświadczenie w pracy na terenach wiejskich. Likwidujemy gospodarstwa, wywożymy stare maszyny rolnicze, narzędzia, sprzątamy stodoły i budynki gospodarcze. Obsługujemy zarówno domy jak i zabudowania gospodarskie.",
+        answer: "Tak, mamy duże doświadczenie w pracy na terenach wiejskich. Likwidujemy gospodarstwa, wywozimy stare maszyny rolnicze, narzędzia, sprzątamy stodoły i budynki gospodarcze. Obsługujemy zarówno domy jak i zabudowania gospodarskie.",
       },
     ],
   },

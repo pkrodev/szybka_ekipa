@@ -25,10 +25,6 @@ export const serviceAreas: ServiceArea[] = [
     name: "Niemce",
     distance: 15,
   },
-  {
-    name: "Łęczna",
-    distance: 20,
-  },
 ];
 
 export function getServiceAreaByName(name: string): ServiceArea | undefined {
