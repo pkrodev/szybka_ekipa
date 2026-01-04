@@ -26,10 +26,6 @@ export const serviceAreas: ServiceArea[] = [
     distance: 15,
   },
   {
-    name: "Bychawa",
-    distance: 25,
-  },
-  {
     name: "Łęczna",
     distance: 20,
   },

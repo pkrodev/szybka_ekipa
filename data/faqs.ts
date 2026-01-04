@@ -8,7 +8,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Jakie miasto obsługujecie?",
-    answer: "Głównie działamy w Lublinie i okolicach, w tym: Radzyń Podlaski, Kock, Lubartów, Świdnik, Bychawa. Jesteśmy jednak elastyczni - jeśli potrzebujesz transportu na większą odległość, skontaktuj się z nami, a ustalimy szczegóły.",
+    answer: "Głównie działamy w Lublinie i okolicach, w tym: Radzyń Podlaski, Kock, Lubartów, Świdnik. Jesteśmy jednak elastyczni - jeśli potrzebujesz transportu na większą odległość, skontaktuj się z nami, a ustalimy szczegóły.",
     category: "obszar",
   },
   {
