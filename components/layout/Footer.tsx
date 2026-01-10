@@ -105,8 +105,17 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-6 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
-            <div>
-              © {currentYear} {siteConfig.name}. Wszelkie prawa zastrzeżone.
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+              <span>© {currentYear} {siteConfig.name}. Wszelkie prawa zastrzeżone.</span>
+              <span className="hidden md:inline text-gray-600">|</span>
+              <a
+                href="https://www.nightcode.pl"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                Wykonanie: <span className="font-semibold">nightcode.pl</span>
+              </a>
             </div>
             <div className="flex gap-6">
               <Link href="/polityka-prywatnosci" className="hover:text-primary transition-colors">
