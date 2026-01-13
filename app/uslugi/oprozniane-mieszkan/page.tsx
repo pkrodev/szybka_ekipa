@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Opróżnianie Mieszkań",
-  "Kompleksowe opróżnianie mieszkań, domów, garaży i piwnic w Lublinie. Wyniesienie, segregacja i utylizacja. Opróżnianie po zmarłych. Od 1900 zł."
+  "Kompleksowe opróżnianie mieszkań, domów, garaży i piwnic w Lublinie. Wyniesienie, segregacja i utylizacja. Opróżnianie po zmarłych. Od 1900 zł.",
+  [],
+  "/uslugi/oprozniane-mieszkan"
 );
 
 export default function OproznianieMieszkanPage() {

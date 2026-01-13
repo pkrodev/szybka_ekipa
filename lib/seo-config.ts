@@ -56,7 +56,8 @@ export function generateSEO({
 export function generateServiceSEO(
   serviceName: string,
   description: string,
-  keywords: string[] = []
+  keywords: string[] = [],
+  path?: string
 ): Metadata {
   return generateSEO({
     title: `${serviceName} Lublin`,
@@ -68,5 +69,6 @@ export function generateServiceSEO(
       `${serviceName.toLowerCase()} lubartów`,
       ...keywords,
     ],
+    path,
   });
 }

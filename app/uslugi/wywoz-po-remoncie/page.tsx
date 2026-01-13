@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Wywóz Śmieci po Remoncie",
-  "Profesjonalny wywóz gruzu i odpadów po remoncie w Lublinie. Worki, gruz, stare podłogi, materiały budowlane. Szybka realizacja. Od 250 zł."
+  "Profesjonalny wywóz gruzu i odpadów po remoncie w Lublinie. Worki, gruz, stare podłogi, materiały budowlane. Szybka realizacja. Od 250 zł.",
+  [],
+  "/uslugi/wywoz-po-remoncie"
 );
 
 export default function WywozPoRemoncePage() {

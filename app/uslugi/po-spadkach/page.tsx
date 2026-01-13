@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Opróżnianie Mieszkań po Spadkach",
-  "Delikatna i profesjonalna pomoc po stracie bliskiej osoby. Opróżnianie mieszkań po zmarłych w Lublinie z szacunkiem i dyskrecją. Od 1900 zł."
+  "Delikatna i profesjonalna pomoc po stracie bliskiej osoby. Opróżnianie mieszkań po zmarłych w Lublinie z szacunkiem i dyskrecją. Od 1900 zł.",
+  [],
+  "/uslugi/po-spadkach"
 );
 
 export default function PoSpadkachPage() {
