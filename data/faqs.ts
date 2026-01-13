@@ -3,7 +3,7 @@ import { FAQ } from "@/types";
 export const faqs: FAQ[] = [
   {
     question: "Jak szybko możecie przyjechać?",
-    answer: "W większości przypadków jesteśmy w stanie przyjechać tego samego dnia lub następnego dnia roboczego. Pracujemy 7 dni w tygodniu, w godzinach 6:00-22:00, więc jesteśmy elastyczni i dostosowujemy się do Twoich potrzeb. Skontaktuj się z nami pod numerem 733 435 333, aby ustalić dokładny termin.",
+    answer: "W większości przypadków jesteśmy w stanie przyjechać tego samego dnia lub następnego dnia roboczego. Pracujemy 7 dni w tygodniu, w godzinach 6:00-22:00, więc jesteśmy elastyczni i dostosowujemy się do Twoich potrzeb. Skontaktuj się z nami pod numerem 733 435 319, aby ustalić dokładny termin.",
     category: "ogólne",
   },
   {
@@ -23,7 +23,7 @@ export const faqs: FAQ[] = [
   },
   {
     question: "Czy mogę dostać wycenę przez telefon?",
-    answer: "Tak, możesz zadzwonić pod numer 733 435 333 i otrzymać wstępną wycenę. Najdokładniejszą wycenę jesteśmy w stanie podać po zobaczeniu zakresu prac - czasami można to zrobić na podstawie zdjęć przesłanych przez WhatsApp lub email. Skorzystaj również z naszego kalkulatora online.",
+    answer: "Tak, możesz zadzwonić pod numer 733 435 319 i otrzymać wstępną wycenę. Najdokładniejszą wycenę jesteśmy w stanie podać po zobaczeniu zakresu prac - czasami można to zrobić na podstawie zdjęć przesłanych przez WhatsApp lub email. Skorzystaj również z naszego kalkulatora online.",
     category: "cennik",
   },
   {

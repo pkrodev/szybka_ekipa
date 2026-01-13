@@ -7,6 +7,8 @@ import FAQSection from "@/components/sections/FAQSection";
 import ContactSection from "@/components/sections/ContactSection";
 import { generateSEO } from "@/lib/seo-config";
 import { siteConfig } from "@/config/site-config";
+import FAQSchema from "@/components/seo/FAQSchema";
+import { faqs } from "@/data/faqs";
 
 export const metadata: Metadata = generateSEO({
   title: siteConfig.seo.defaultTitle,
@@ -51,8 +53,12 @@ export const metadata: Metadata = generateSEO({
 });
 
 export default function Home() {
+  // Show first 8 FAQs for schema (same as displayed on page)
+  const displayedFAQs = faqs.slice(0, 8);
+
   return (
     <>
+      <FAQSchema items={displayedFAQs} />
       <HeroSection />
       <ServicesSection />
       <PriceCalculatorSection />

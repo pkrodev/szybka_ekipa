@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/site-config";
+import { services } from "@/data/services";
 
 export default function LocalBusinessSchema() {
   const schema = {
@@ -49,24 +50,19 @@ export default function LocalBusinessSchema() {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Usługi opróżniania i wywozu",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Opróżnianie mieszkań",
-            description: "Kompleksowe opróżnianie mieszkań i garaży",
+      itemListElement: services.map((service, index) => ({
+        "@type": "Offer",
+        position: index + 1,
+        itemOffered: {
+          "@type": "Service",
+          name: service.title,
+          description: service.shortDescription,
+          provider: {
+            "@type": "MovingCompany",
+            name: siteConfig.name,
           },
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Wywóz śmieci",
-            description: "Profesjonalny wywóz i utylizacja śmieci",
-          },
-        },
-      ],
+      })),
     },
     sameAs: [
       siteConfig.social.facebook,

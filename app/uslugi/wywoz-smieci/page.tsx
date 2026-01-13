@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Wywóz Śmieci",
-  "Wywóz śmieci, gruzu i odpadów wielkogabarytowych w Lublinie. Legalna utylizacja w PSZOK. Wywóz mebli, AGD, gruzu budowlanego. Od 200 zł."
+  "Wywóz śmieci, gruzu i odpadów wielkogabarytowych w Lublinie. Legalna utylizacja w PSZOK. Wywóz mebli, AGD, gruzu budowlanego. Od 200 zł.",
+  [],
+  "/uslugi/wywoz-smieci"
 );
 
 export default function WywozSmieciPage() {

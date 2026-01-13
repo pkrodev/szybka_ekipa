@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Wywóz Mebli",
-  "Profesjonalny wywóz starych mebli w Lublinie: szafy, kanapy, łóżka, meblościanki. Wyniesienie z każdego piętra, transport i utylizacja. Od 350 zł."
+  "Profesjonalny wywóz starych mebli w Lublinie: szafy, kanapy, łóżka, meblościanki. Wyniesienie z każdego piętra, transport i utylizacja. Od 350 zł.",
+  [],
+  "/uslugi/wywoz-mebli"
 );
 
 export default function WywozMebliPage() {

@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site-config";
 export const metadata: Metadata = generateSEO({
   title: "Kontakt",
   description:
-    "Skontaktuj się z nami - transport mebli, opróżnianie mieszkań i wywóz śmieci w Lublinie. Zadzwoń: 733 435 333 lub wypełnij formularz kontaktowy.",
+    "Skontaktuj się z nami - transport mebli, opróżnianie mieszkań i wywóz śmieci w Lublinie. Zadzwoń: 733 435 319 lub wypełnij formularz kontaktowy.",
   keywords: [
     "kontakt transport Lublin",
     "formularz kontaktowy",

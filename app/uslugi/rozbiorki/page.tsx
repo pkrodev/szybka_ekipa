@@ -9,7 +9,9 @@ import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
   "Rozbiórki",
-  "Profesjonalne rozbiórki w Lublinie: piece kaflowe, meblościanki, altany, komórki lokatorskie. Z wywozem gruzu. Wycena indywidualna."
+  "Profesjonalne rozbiórki w Lublinie: piece kaflowe, meblościanki, altany, komórki lokatorskie. Z wywozem gruzu. Wycena indywidualna.",
+  [],
+  "/uslugi/rozbiorki"
 );
 
 export default function RozbiorkiPage() {
