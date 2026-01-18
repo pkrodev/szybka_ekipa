@@ -37,13 +37,14 @@ export default function GalleryItem({ image, onClick }: GalleryItemProps) {
       >
         {/* Before Image */}
         <div className="absolute inset-0">
-          <div className="relative w-full h-full bg-muted">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-6xl opacity-20">📦</div>
-            </div>
-            <div className="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-bold rounded-full shadow-lg">
-              PRZED
-            </div>
+          <Image
+            src={image.beforeImage}
+            alt={`${image.alt} - przed`}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-bold rounded-full shadow-lg">
+            PRZED
           </div>
         </div>
 
@@ -55,13 +56,14 @@ export default function GalleryItem({ image, onClick }: GalleryItemProps) {
             opacity: showAfter ? 1 : 0,
           }}
         >
-          <div className="relative w-full h-full bg-muted">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-6xl opacity-20">✨</div>
-            </div>
-            <div className="absolute top-4 right-4 px-3 py-1.5 bg-green-500 text-white text-xs font-bold rounded-full shadow-lg">
-              PO
-            </div>
+          <Image
+            src={image.afterImage}
+            alt={`${image.alt} - po`}
+            fill
+            className="object-cover"
+          />
+          <div className="absolute top-4 right-4 px-3 py-1.5 bg-green-500 text-white text-xs font-bold rounded-full shadow-lg">
+            PO
           </div>
         </div>
 

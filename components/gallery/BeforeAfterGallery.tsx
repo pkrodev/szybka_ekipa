@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { GalleryImage } from "@/types";
 import GalleryItem from "./GalleryItem";
 import Modal from "@/components/ui/Modal";
@@ -67,16 +68,7 @@ export default function BeforeAfterGallery({
       {/* Modal */}
       {selectedImage && (
         <Modal isOpen={selectedImageIndex !== null} onClose={closeModal}>
-          <div className="relative bg-white rounded-xl overflow-hidden max-w-5xl w-full">
-            {/* Close button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/70 text-white rounded-full transition-colors"
-              aria-label="Zamknij"
-            >
-              <X className="w-6 h-6" />
-            </button>
-
+          <div className="relative bg-white rounded-xl overflow-hidden max-w-5xl w-full pt-12">
             {/* Navigation buttons */}
             {images.length > 1 && (
               <>
@@ -97,15 +89,28 @@ export default function BeforeAfterGallery({
               </>
             )}
 
-            {/* Image container */}
-            <div className="relative aspect-video bg-muted">
-              {/* Placeholder - Before */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="text-8xl">📦</div>
-                  <div className="text-2xl font-bold text-muted-foreground">
-                    PRZED
-                  </div>
+            {/* Image container - Before and After side by side */}
+            <div className="grid grid-cols-2 gap-1">
+              <div className="relative aspect-video bg-muted">
+                <Image
+                  src={selectedImage.beforeImage}
+                  alt={`${selectedImage.alt} - przed`}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-sm font-bold rounded-full shadow-lg">
+                  PRZED
+                </div>
+              </div>
+              <div className="relative aspect-video bg-muted">
+                <Image
+                  src={selectedImage.afterImage}
+                  alt={`${selectedImage.alt} - po`}
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute top-4 right-4 px-3 py-1.5 bg-green-500 text-white text-sm font-bold rounded-full shadow-lg">
+                  PO
                 </div>
               </div>
             </div>
@@ -136,21 +141,6 @@ export default function BeforeAfterGallery({
                   />
                 </svg>
                 <span className="font-semibold">{selectedImage.location}</span>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold">
-                  {selectedImage.category === "transport" && "Transport mebli"}
-                  {selectedImage.category === "clearing" &&
-                    "Opróżnianie mieszkań"}
-                  {selectedImage.category === "waste-disposal" &&
-                    "Wywóz śmieci"}
-                </span>
-                {selectedImageIndex !== null && (
-                  <span className="text-sm text-muted-foreground">
-                    {selectedImageIndex + 1} / {images.length}
-                  </span>
-                )}
               </div>
 
               <div className="mt-6 pt-6 border-t border-border">
