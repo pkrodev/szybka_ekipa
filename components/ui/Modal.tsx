@@ -87,10 +87,10 @@ export default function Modal({
         {!title && (
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 p-2 text-white bg-black/50 hover:bg-black/70 rounded-lg transition-colors"
+            className="absolute top-4 right-4 z-10 p-2 text-black hover:text-gray-600 transition-colors"
             aria-label="Zamknij"
           >
-            <X className="w-5 h-5" />
+            <X className="w-6 h-6" />
           </button>
         )}
 

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Image as ImageIcon } from "lucide-react";
 import Container from "@/components/ui/Container";
 import BeforeAfterGallery from "@/components/gallery/BeforeAfterGallery";
-import { galleryImages, getGalleryImagesByCategory } from "@/data/gallery";
+import { galleryImages } from "@/data/gallery";
 import { generateSEO } from "@/lib/seo-config";
 
 export const metadata: Metadata = generateSEO({
@@ -19,9 +19,6 @@ export const metadata: Metadata = generateSEO({
 });
 
 export default function GaleriaPage() {
-  const clearingImages = getGalleryImagesByCategory("clearing");
-  const wasteDisposalImages = getGalleryImagesByCategory("waste-disposal");
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-muted/30 to-white">
       <Container>
@@ -53,42 +50,6 @@ export default function GaleriaPage() {
           </div>
           <BeforeAfterGallery images={galleryImages} columns={3} />
         </section>
-
-        {/* Clearing category */}
-        {clearingImages.length > 0 && (
-          <section className="mb-20">
-            <div className="mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-secondary/10 text-secondary rounded-full text-sm font-semibold mb-3">
-                Opróżnianie
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                Opróżnianie Mieszkań i Garaży
-              </h2>
-              <p className="text-muted-foreground">
-                Kompleksowe opróżnianie z wywozem i utylizacją
-              </p>
-            </div>
-            <BeforeAfterGallery images={clearingImages} columns={3} />
-          </section>
-        )}
-
-        {/* Waste disposal category */}
-        {wasteDisposalImages.length > 0 && (
-          <section className="mb-20">
-            <div className="mb-8">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent/10 text-accent rounded-full text-sm font-semibold mb-3">
-                Wywóz śmieci
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                Wywóz Śmieci i Gruzu
-              </h2>
-              <p className="text-muted-foreground">
-                Wywóz i legalna utylizacja odpadów
-              </p>
-            </div>
-            <BeforeAfterGallery images={wasteDisposalImages} columns={3} />
-          </section>
-        )}
 
         {/* CTA Section */}
         <section className="py-16 mb-20">

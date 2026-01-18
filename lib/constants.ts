@@ -3,7 +3,7 @@ export const NAV_ITEMS = [
   { label: "Strona główna", href: "/" },
   { label: "Usługi", href: "/uslugi" },
   { label: "Kalkulator cen", href: "/#kalkulator-cen" },
-  // { label: "Galeria", href: "/galeria" },
+  { label: "Galeria", href: "/galeria" },
   { label: "Kontakt", href: "/kontakt" },
 ] as const;
 

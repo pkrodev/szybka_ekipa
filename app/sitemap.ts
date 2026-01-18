@@ -8,55 +8,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/uslugi`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/oproznianie-mieszkan`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/wywoz-smieci`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/wywoz-mebli`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/wywoz-po-remoncie`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/rozbiorki`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${baseUrl}/uslugi/po-spadkach`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/galeria`,
+      lastModified: new Date("2026-01-18"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/kontakt`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-01-18"),
       changeFrequency: "yearly" as const,
       priority: 0.6,
     },
@@ -66,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const locationSlugs = getAllLocationSlugs();
   const locationRoutes = locationSlugs.map((slug) => ({
     url: `${baseUrl}/miejscowosci/${slug}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-01-18"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
