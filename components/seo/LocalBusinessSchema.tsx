@@ -9,7 +9,6 @@ export default function LocalBusinessSchema() {
     name: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
-    telephone: siteConfig.contact.phone,
     email: siteConfig.contact.email,
     priceRange: "$$",
     address: {

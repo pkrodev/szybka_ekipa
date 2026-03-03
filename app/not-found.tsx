@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { siteConfig } from "@/config/site-config";
-import { Home, Phone, Search, ArrowLeft } from "lucide-react";
+import { Home, Search, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Strona nie znaleziona - 404",
@@ -21,7 +21,7 @@ export default function NotFound() {
     { href: "/uslugi/oprozniane-mieszkan", label: "Opróżnianie mieszkań" },
     { href: "/uslugi/wywoz-smieci", label: "Wywóz śmieci" },
     { href: "/uslugi/rozbiorki", label: "Rozbiórki" },
-    { href: "/kontakt", label: "Kontakt", icon: Phone },
+    { href: "/kontakt", label: "Kontakt" },
   ];
 
   return (
@@ -54,12 +54,6 @@ export default function NotFound() {
               <Link href="/">
                 <Home className="w-5 h-5 mr-2" />
                 Strona główna
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="lg">
-              <Link href={`tel:${siteConfig.contact.phoneRaw}`}>
-                <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń: {siteConfig.contact.phone}
               </Link>
             </Button>
           </div>

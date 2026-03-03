@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, Clock } from "lucide-react";
-import { CONTACT } from "@/lib/constants";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 
@@ -88,15 +87,15 @@ export default function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Button asChild size="lg">
-                <a href={CONTACT.PHONE_HREF}>
+                <Link href="/kontakt">
                   <Phone className="w-5 h-5 mr-2" />
-                  Zadzwoń: {CONTACT.PHONE}
-                </a>
+                  Skontaktuj się
+                </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/kontakt">
                   <Mail className="w-5 h-5 mr-2" />
-                  Skontaktuj się z nami
+                  Formularz kontaktowy
                 </Link>
               </Button>
             </div>

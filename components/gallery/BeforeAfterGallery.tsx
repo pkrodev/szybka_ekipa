@@ -149,7 +149,7 @@ export default function BeforeAfterGallery({
                 </p>
                 <div className="flex gap-3">
                   <Button asChild>
-                    <a href="tel:+48733435319">Zadzwoń: 733 435 319</a>
+                    <a href="/kontakt">Skontaktuj się</a>
                   </Button>
                   <Button asChild variant="outline">
                     <a href="/kontakt">Wyślij wiadomość</a>

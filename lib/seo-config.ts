@@ -61,7 +61,7 @@ export function generateServiceSEO(
 ): Metadata {
   return generateSEO({
     title: `${serviceName} Lublin`,
-    description: `${description} Profesjonalne usługi w Lublinie i okolicach. Zadzwoń: ${siteConfig.contact.phone}`,
+    description: `${description} Profesjonalne usługi w Lublinie i okolicach.`,
     keywords: [
       `${serviceName.toLowerCase()} lublin`,
       `${serviceName.toLowerCase()} radzyń podlaski`,

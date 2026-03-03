@@ -7,7 +7,6 @@ import Button from "@/components/ui/Button";
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import { locations, getLocationBySlug, getAllLocationSlugs } from "@/data/locations";
 import { generateSEO } from "@/lib/seo-config";
-import { CONTACT } from "@/lib/constants";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
 import FAQSchema from "@/components/seo/FAQSchema";
 import BreadcrumbSchema from "@/components/seo/BreadcrumbSchema";
@@ -83,15 +82,9 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <a href={CONTACT.PHONE_HREF}>
+                  <a href="/kontakt">
                     <Phone className="w-5 h-5 mr-2" />
-                    {CONTACT.PHONE}
-                  </a>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <a href={CONTACT.PHONE_2_HREF}>
-                    <Phone className="w-5 h-5 mr-2" />
-                    {CONTACT.PHONE_2}
+                    Skontaktuj się
                   </a>
                 </Button>
               </div>
@@ -242,7 +235,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button asChild size="lg">
-                  <a href={CONTACT.PHONE_HREF}>Zadzwoń: {CONTACT.PHONE}</a>
+                  <a href="/kontakt">Skontaktuj się</a>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <Link href="/kontakt">Formularz kontaktowy</Link>

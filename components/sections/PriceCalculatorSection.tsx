@@ -1,7 +1,6 @@
-import { FileImage, Phone } from "lucide-react";
+import { FileImage } from "lucide-react";
 import Container from "@/components/ui/Container";
 import QuoteRequestForm from "@/components/calculator/QuoteRequestForm";
-import { CONTACT } from "@/lib/constants";
 
 export default function PriceCalculatorSection() {
   return (
@@ -54,13 +53,12 @@ export default function PriceCalculatorSection() {
                   wycenę i skontaktujemy się telefonicznie w ciągu 15 minut.
                 </p>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Wolisz tradycyjny kontakt? Zadzwoń bezpośrednio:{" "}
+                  Wolisz tradycyjny kontakt?{" "}
                   <a
-                    href={CONTACT.PHONE_HREF}
+                    href="/kontakt"
                     className="text-primary hover:underline font-semibold inline-flex items-center gap-1"
                   >
-                    <Phone className="w-3 h-3" />
-                    {CONTACT.PHONE}
+                    Skontaktuj się z nami
                   </a>
                 </p>
               </div>

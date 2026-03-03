@@ -24,12 +24,6 @@ export const OPENING_HOURS = {
 
 // Contact info
 export const CONTACT = {
-  PHONE: "733 435 319",
-  PHONE_RAW: "733435319",
-  PHONE_2: "519 096 947",
-  PHONE_2_RAW: "519096947",
   EMAIL: "szybkaekipa24@gmail.com",
-  PHONE_HREF: "tel:+48733435319",
-  PHONE_2_HREF: "tel:+48519096947",
   EMAIL_HREF: "mailto:szybkaekipa24@gmail.com",
 } as const;
