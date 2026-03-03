@@ -4,10 +4,6 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://szybka-ekipa.pl",
 
   contact: {
-    phone: "733 435 319",
-    phoneRaw: "733435319",
-    phone2: "519 096 947",
-    phone2Raw: "519096947",
     email: "szybkaekipa24@gmail.com",
     hours: "7 dni w tygodniu, 6:00-22:00",
   },
@@ -35,9 +31,9 @@ export const siteConfig = {
   },
 
   seo: {
-    defaultTitle: "Opróżnianie Mieszkań Lublin | Wywóz Śmieci | Szybka Ekipa 733 435 319",
+    defaultTitle: "Opróżnianie Mieszkań Lublin | Wywóz Śmieci | Szybka Ekipa",
     titleTemplate: "%s | Szybka Ekipa Lublin",
-    description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lublinie i okolicach. Szybko, tanio, 7 dni w tygodniu. Zadzwoń: 733 435 319",
+    description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lublinie i okolicach. Szybko, tanio, 7 dni w tygodniu.",
     keywords: [
       "opróżnianie mieszkań Lublin",
       "wywóz śmieci Lublin",

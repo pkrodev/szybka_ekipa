@@ -44,7 +44,7 @@ export function formatPhone(phone: string): string {
 /**
  * Convert phone number to tel: link
  * @param phone - Phone number
- * @returns Tel link (e.g., "tel:+48733435319")
+ * @returns Tel link (e.g., "tel:+48XXXXXXXXX")
  */
 export function phoneToHref(phone: string): string {
   const cleaned = phone.replace(/\D/g, "");

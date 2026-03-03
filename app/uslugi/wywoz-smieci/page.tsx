@@ -4,7 +4,6 @@ import { Trash2, CheckCircle, Phone } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { generateServiceSEO } from "@/lib/seo-config";
-import { CONTACT } from "@/lib/constants";
 import ServiceSchema from "@/components/seo/ServiceSchema";
 
 export const metadata: Metadata = generateServiceSEO(
@@ -39,9 +38,9 @@ export default function WywozSmieciPage() {
               wielkogabarytowych. Legalna utylizacja zgodnie z przepisami.
             </p>
             <Button asChild size="lg">
-              <a href={CONTACT.PHONE_HREF}>
+              <a href="/kontakt">
                 <Phone className="w-5 h-5 mr-2" />
-                Zadzwoń: {CONTACT.PHONE}
+                Skontaktuj się
               </a>
             </Button>
           </div>
@@ -202,7 +201,7 @@ export default function WywozSmieciPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <a href={CONTACT.PHONE_HREF}>Zadzwoń: {CONTACT.PHONE}</a>
+                <a href="/kontakt">Skontaktuj się</a>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/kontakt">Formularz kontaktowy</Link>

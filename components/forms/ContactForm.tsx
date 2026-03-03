@@ -61,7 +61,7 @@ export default function ContactForm() {
       setErrorMessage(
         error instanceof Error
           ? error.message
-          : "Wystąpił błąd. Spróbuj ponownie lub zadzwoń: 733 435 333"
+          : "Wystąpił błąd. Spróbuj ponownie lub skontaktuj się z nami."
       );
     }
   };

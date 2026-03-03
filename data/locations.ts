@@ -9,8 +9,8 @@ export const locations: LocationPage[] = [
     region: "powiat świdnicki, woj. lubelskie",
     description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Świdniku. Obsługujemy całe miasto i okolice - szybko, tanio i solidnie.",
     seo: {
-      title: "Opróżnianie Mieszkań Świdnik | Wywóz Mebli i Śmieci | 733 435 319",
-      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Świdniku. Obsługujemy całe miasto - dzielnice Centrum, Piaski, Kalinówka. Tanie i szybkie usługi 7 dni w tygodniu. Zadzwoń: 733 435 319",
+      title: "Opróżnianie Mieszkań Świdnik | Wywóz Mebli i Śmieci",
+      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Świdniku. Obsługujemy całe miasto - dzielnice Centrum, Piaski, Kalinówka. Tanie i szybkie usługi 7 dni w tygodniu.",
       keywords: [
         // Główne frazy dla Świdnika
         "opróżnianie mieszkań Świdnik",
@@ -89,8 +89,8 @@ export const locations: LocationPage[] = [
     region: "gmina Niemce, powiat lubelski, woj. lubelskie",
     description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Niemcach. Obsługujemy całą gminę i wszystkie sołectwa - szybko, tanio i solidnie.",
     seo: {
-      title: "Opróżnianie Mieszkań Niemce | Wywóz Mebli i Śmieci | 733 435 319",
-      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Niemcach i gminie. Obsługujemy wszystkie sołectwa. Tanie i szybkie usługi 7 dni w tygodniu. Zadzwoń: 733 435 319",
+      title: "Opróżnianie Mieszkań Niemce | Wywóz Mebli i Śmieci",
+      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Niemcach i gminie. Obsługujemy wszystkie sołectwa. Tanie i szybkie usługi 7 dni w tygodniu.",
       keywords: [
         // Główne frazy dla Niemiec
         "opróżnianie mieszkań Niemce",
@@ -174,8 +174,8 @@ export const locations: LocationPage[] = [
     region: "powiat lubartowski, woj. lubelskie",
     description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Lubartowie. Obsługujemy całe miasto i powiat - szybko, tanio i solidnie.",
     seo: {
-      title: "Opróżnianie Mieszkań Lubartów | Wywóz Mebli i Śmieci | 733 435 319",
-      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Lubartowie. Obsługujemy całe miasto i powiat lubartowski. Tanie i szybkie usługi 7 dni w tygodniu. Zadzwoń: 733 435 319",
+      title: "Opróżnianie Mieszkań Lubartów | Wywóz Mebli i Śmieci",
+      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Lubartowie. Obsługujemy całe miasto i powiat lubartowski. Tanie i szybkie usługi 7 dni w tygodniu.",
       keywords: [
         // Główne frazy dla Lubartowa
         "opróżnianie mieszkań Lubartów",
@@ -259,8 +259,8 @@ export const locations: LocationPage[] = [
     description: "Profesjonalne opróżnianie mieszkań i wywóz śmieci w Radzyniu Podlaskim. Obsługujemy całe miasto i powiat - szybko, tanio i solidnie.",
     showTravelCost: false, // Obsługiwany weekendami bez standardowej opłaty za dojazd
     seo: {
-      title: "Opróżnianie Mieszkań Radzyń Podlaski | Wywóz Mebli | 733 435 319",
-      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Radzyniu Podlaskim. Obsługujemy całe miasto i powiat radzyński. Tanie usługi 7 dni w tygodniu. Zadzwoń: 733 435 319",
+      title: "Opróżnianie Mieszkań Radzyń Podlaski | Wywóz Mebli",
+      description: "Profesjonalne opróżnianie mieszkań, wywóz mebli i śmieci w Radzyniu Podlaskim. Obsługujemy całe miasto i powiat radzyński. Tanie usługi 7 dni w tygodniu.",
       keywords: [
         // Główne frazy dla Radzynia
         "opróżnianie mieszkań Radzyń Podlaski",

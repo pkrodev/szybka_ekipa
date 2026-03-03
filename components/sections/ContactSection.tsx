@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import { Mail, Clock, MapPin } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { CONTACT } from "@/lib/constants";
@@ -26,33 +26,6 @@ export default function ContactSection() {
             <h3 className="text-2xl font-bold text-foreground mb-6">
               Dane kontaktowe
             </h3>
-
-            {/* Phone */}
-            <div className="flex items-start gap-4 p-6 bg-primary/5 rounded-xl border border-primary/20 hover:border-primary/40 transition-colors">
-              <div className="flex-shrink-0 p-3 bg-primary/10 rounded-lg">
-                <Phone className="w-6 h-6 text-primary" />
-              </div>
-              <div className="flex-1">
-                <p className="text-sm text-muted-foreground mb-1">Telefony</p>
-                <div className="space-y-1">
-                  <a
-                    href={CONTACT.PHONE_HREF}
-                    className="block text-2xl font-bold text-foreground hover:text-primary transition-colors"
-                  >
-                    {CONTACT.PHONE}
-                  </a>
-                  <a
-                    href={CONTACT.PHONE_2_HREF}
-                    className="block text-2xl font-bold text-foreground hover:text-primary transition-colors"
-                  >
-                    {CONTACT.PHONE_2}
-                  </a>
-                </div>
-                <p className="text-sm text-muted-foreground mt-1">
-                  Najszybszy kontakt - odbieramy od ręki
-                </p>
-              </div>
-            </div>
 
             {/* Email */}
             <div className="flex items-start gap-4 p-6 bg-secondary/5 rounded-xl border border-secondary/20 hover:border-secondary/40 transition-colors">
@@ -122,13 +95,6 @@ export default function ContactSection() {
 
             <div className="space-y-4">
               <Button asChild size="lg" className="w-full">
-                <a href={CONTACT.PHONE_HREF}>
-                  <Phone className="w-5 h-5 mr-2" />
-                  Zadzwoń: {CONTACT.PHONE}
-                </a>
-              </Button>
-
-              <Button asChild variant="outline" size="lg" className="w-full">
                 <Link href="/kontakt">
                   <Mail className="w-5 h-5 mr-2" />
                   Formularz kontaktowy

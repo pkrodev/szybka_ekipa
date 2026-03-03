@@ -6,7 +6,6 @@ import Card from "@/components/ui/Card";
 import Button from "@/components/ui/Button";
 import { services } from "@/data/services";
 import { generateSEO } from "@/lib/seo-config";
-import { CONTACT } from "@/lib/constants";
 
 const iconMap = {
   Truck,
@@ -186,7 +185,7 @@ export default function UslugiPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
-                <a href={CONTACT.PHONE_HREF}>Zadzwoń: {CONTACT.PHONE}</a>
+                <a href="/kontakt">Skontaktuj się</a>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <Link href="/kontakt">Formularz kontaktowy</Link>

@@ -63,10 +63,10 @@ export default function GaleriaPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:+48733435319"
+                href="/kontakt"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors text-lg"
               >
-                Zadzwoń: 733 435 319
+                Skontaktuj się
               </a>
               <a
                 href="/kontakt"

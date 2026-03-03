@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { Phone, Mail, Clock, MapPin, MessageSquare } from "lucide-react";
+import { Mail, Clock, MapPin, MessageSquare } from "lucide-react";
 import Container from "@/components/ui/Container";
 import ContactForm from "@/components/forms/ContactForm";
 import { generateSEO } from "@/lib/seo-config";
@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site-config";
 export const metadata: Metadata = generateSEO({
   title: "Kontakt",
   description:
-    "Skontaktuj się z nami - transport mebli, opróżnianie mieszkań i wywóz śmieci w Lublinie. Zadzwoń: 733 435 319 lub wypełnij formularz kontaktowy.",
+    "Skontaktuj się z nami - transport mebli, opróżnianie mieszkań i wywóz śmieci w Lublinie. Wypełnij formularz kontaktowy.",
   keywords: [
     "kontakt transport Lublin",
     "formularz kontaktowy",
@@ -43,33 +43,6 @@ export default function KontaktPage() {
             <h2 className="text-2xl font-bold text-foreground mb-6">
               Dane kontaktowe
             </h2>
-
-            {/* Phone */}
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-border hover:border-primary/40 transition-colors">
-              <div className="flex items-start gap-4">
-                <div className="flex-shrink-0 p-3 bg-primary/10 rounded-lg">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm text-muted-foreground mb-1">Telefony</p>
-                  <a
-                    href={CONTACT.PHONE_HREF}
-                    className="text-xl font-bold text-foreground hover:text-primary transition-colors block mb-1"
-                  >
-                    {CONTACT.PHONE}
-                  </a>
-                  <a
-                    href={CONTACT.PHONE_2_HREF}
-                    className="text-xl font-bold text-foreground hover:text-primary transition-colors block mb-2"
-                  >
-                    {CONTACT.PHONE_2}
-                  </a>
-                  <p className="text-sm text-muted-foreground">
-                    Najszybszy kontakt - odbieramy od ręki
-                  </p>
-                </div>
-              </div>
-            </div>
 
             {/* Email */}
             <div className="bg-white rounded-xl p-6 shadow-sm border border-border hover:border-secondary/40 transition-colors">

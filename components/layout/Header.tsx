@@ -22,20 +22,6 @@ export default function Header() {
           <div className="flex items-center justify-between text-sm">
             <div className="flex items-center gap-6">
               <a
-                href={CONTACT.PHONE_HREF}
-                className="flex items-center gap-2 hover:underline"
-              >
-                <Phone className="w-4 h-4" />
-                <span className="font-semibold">{CONTACT.PHONE}</span>
-              </a>
-              <a
-                href={CONTACT.PHONE_2_HREF}
-                className="flex items-center gap-2 hover:underline"
-              >
-                <Phone className="w-4 h-4" />
-                <span className="font-semibold">{CONTACT.PHONE_2}</span>
-              </a>
-              <a
                 href={CONTACT.EMAIL_HREF}
                 className="flex items-center gap-2 hover:underline"
               >
@@ -77,9 +63,9 @@ export default function Header() {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Button asChild>
-              <a href={CONTACT.PHONE_HREF}>
+              <a href="/kontakt">
                 <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń teraz
+                Skontaktuj się
               </a>
             </Button>
           </div>
@@ -123,12 +109,6 @@ export default function Header() {
           {/* Mobile contact buttons */}
           <div className="flex flex-col gap-3 mt-4 pt-4 border-t border-border">
             <Button asChild className="w-full">
-              <a href={CONTACT.PHONE_HREF}>
-                <Phone className="w-4 h-4 mr-2" />
-                Zadzwoń: {CONTACT.PHONE}
-              </a>
-            </Button>
-            <Button asChild variant="outline" className="w-full">
               <Link href="/kontakt">
                 <Mail className="w-4 h-4 mr-2" />
                 Formularz kontaktowy

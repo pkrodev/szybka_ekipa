@@ -21,7 +21,6 @@ export default function ServiceSchema({
     provider: {
       "@type": "MovingCompany",
       name: siteConfig.name,
-      telephone: siteConfig.contact.phone,
       email: siteConfig.contact.email,
       address: {
         "@type": "PostalAddress",
